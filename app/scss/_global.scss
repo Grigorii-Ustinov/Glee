@@ -1,12 +1,35 @@
+html,
+body{
+  height: 100%;
+}
 body {
   color: $default;
   font-size: 15px;
   line-height: 1;
   @extend %DMSans-400;
+  display: flex;
+  flex-direction: column;
 }
 
-.container {
+.main{
+  flex-grow: 1;
+}
+
+.wrapper {
   max-width: 1800px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  font-size: 14px;
+  line-height: 32px;
+  color: $link;
+  @extend %Rubick-400;
 }
